@@ -53,8 +53,8 @@ systemctl enable zabbix-server zabbix-agent apache2
 
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![login-zabbix](https://github.com/v1us1885/hw-02/blob/main/login-zabbix.png)`
+`При необходимости прикрепитe сюда скриншоты  `
+![login-zabbix](https://github.com/v1us1885/hw-02/blob/main/login-zabbix.png)
 
 ---
 
