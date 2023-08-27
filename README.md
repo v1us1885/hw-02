@@ -76,7 +76,13 @@ systemctl enable zabbix-server zabbix-agent apache2
 
 
 ```
-Поле для вставки кода...
+wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.0-4+ubuntu22.04_all.deb
+dpkg -i zabbix-release_6.0-4+ubuntu22.04_all.deb
+apt update
+apt install zabbix-agent
+sed -i 's/Server=127.0.0.1/Server=10.129.0.9/g' /etc/zabbix/zabbix_agentd.conf
+systemctl restart zabbix-agent
+systemctl enable zabbix-agent
 ....
 ....
 ....
@@ -84,7 +90,10 @@ systemctl enable zabbix-server zabbix-agent apache2
 ```
 
 `При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+![Configuration > Hosts](https://github.com/v1us1885/hw-02/blob/main/conf-zabbix.png)
+![log](https://github.com/v1us1885/hw-02/blob/main/log-zabbix.png)
+![log](https://github.com/v1us1885/hw-02/blob/main/latest-zabbix.png)
+
 
 ---
 ### Задание 3
